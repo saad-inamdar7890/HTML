@@ -1,57 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TTimePass 1</title>
+    <title>Muti Colour Website</title>
     <style>
-        body{
-            background-color: bisque;
-        }
-        .card
-        {
-            background-color: aqua;
-            padding: auto;
-            width: 220px;
-            height: 364px;
-            border-radius: 7px;
-        }
-        .image{
-            padding: 5px;
-        }
-        .image img{
-            border-radius: 7px;
-        }
-        .content{
-            font-size: 15px;
-            padding: 13px;
-            
-        }
-        .cap{
-            padding: 0px 5px 5px 5px;
+        :root {
+            --primary-color: rgb(162, 237, 247);
+            --text-color: white;
+            --secondat-color: rgb(7, 133, 150);
         }
 
-        .cap span{
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 20px;
+
+        }
+        header{
+            position: sticky;
+            top: 0;
+        }
+
+        nav {
+            background-color: var(--secondat-color);
+            padding: 0px;
+            text-align: center;
+            margin: 0px;
+            font-weight: bolder;
+            color: var(--text-color);
+            
+        }
+
+        body {
+            background-color: var(--primary-color);
+        }
+
+        .main {
+            width: 90%;
+            height: 70%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: rgb(252, 253, 177);
+            margin: 10px;
+            width: 220px;
+            height: 450px;
+            border-radius: 7px;
+        }
+
+        .image {
+            padding: 5px;
+        }
+
+        .image img {
+            border-radius: 7px;
+        }
+
+        .content {
+            font-size: 14px;
+            padding: 13px;
+            font-family: "Noto Sans", sans-serif;
+
+
+        }
+        footer{
+            height: 30px;
+            background-color: black;
+            text-align: center;
+            color: antiquewhite;
+            margin: 0px;
+            padding-top: 10px;
+            bottom: 0px;
+            width: 100%;
+            
+
+            
+        }
+
+        .cv {
+            background-color: bisque;
+            margin: 10px;
+            width: 220px;
+            height: 450px;
+            border-radius: 7px;
+
+        }
+
+        ul {
+            list-style-type: circle;
+
+        }
+
+        .cap {
+            padding: 0px 5px 5px 5px;
+
+        }
+
+        .cap span {
             border: 2px solid black;
             padding: 4px;
             border-radius: 5px;
         }
-        
+
+        .b {
+            text-align: center;
+            padding: 10px 0 20px 0;
+            border-radius: 7px;
+
+        }
+
+        .b button {
+            border-radius: 11px;
+            border-color: rgb(0, 0, 0);
+            background-color: rgb(108, 247, 252);
+            margin: 2px;
+            padding: 4px;
+
+        }
+        .fix{
+            background-color: orange;
+            height: 20px;
+            width: 20px;
+            border-radius: 20px;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
     </style>
 </head>
+
 <body>
-    <div class="card">
-<div class="image">
-    <img width="188" src="https://c1.wallpaperflare.com/preview/694/643/634/jasmine-flower-white-flower-white.jpg" alt="" srcset="">
-</div>
-<div class="cap">
-<span>Great</span>
-<span>smart</span>
-</div>
-<div class="content">
-    <h1>Saad Inamdar</h1>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, officiis dolor! Iure possimus minus id voluptas natus quos consequuntur, repellendus facere modi error.</p>
-</div>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="card">
+            <div class="image">
+                <img width="188"
+                    src="https://c1.wallpaperflare.com/preview/694/643/634/jasmine-flower-white-flower-white.jpg" alt=""
+                    srcset="">
+            </div>
+            <div class="cap">
+                <span>Great</span>
+                <span>Smart</span>
+                <span>Handsome</span>
+            </div>
+            <div class="content">
+                <h2>Saad Inamdar</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, officiis dolor! Iure possimus minus
+                    id voluptas natus quos consequuntur, repellendus facere modi error.</p>
+            </div>
+            <div class="b">
+                <button>Read More</button>
+
+            </div>
+        </div>
+
+        <div class="cv">
+            <h2 style="font-style:italic;">Bio</h2>
+            <ul style="list-style-type: circle;">
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, fugiat!</li>
+                <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid necessitatibus, veniam a
+                    reprehenderit labore, nulla adipisci qui libero consequuntur possimus dignissimos eum eligendi rem
+                    voluptates in fuga est similique tenetur.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, non!
+                </li>
+            </ul>
+        </div>
     </div>
+    <div class="fix"></div>
+    <footer>Thank You for Visit</footer>
 </body>
+
 </html>
